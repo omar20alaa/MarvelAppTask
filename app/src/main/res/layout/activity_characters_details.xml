@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marvel.characterDetail.view.charactersDetailsActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_300sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:src="@drawable/back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@id/imageView"
+            android:text="NAME"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/titleName"
+            app:layout_constraintStart_toStartOf="@id/titleName"
+            android:text="aaa"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/titleDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@id/name"
+            android:text="DESCRIPTION"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/red"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/titleDesc"
+            app:layout_constraintStart_toStartOf="@id/titleDesc"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="aaa"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/comics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            app:layout_constraintStart_toStartOf="@id/description"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="COMICS"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comicsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@+id/comics"
+            app:layout_constraintStart_toStartOf="@id/comics"
+            />
+
+
+        <TextView
+            android:id="@+id/events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/comicsRecyclerView"
+            app:layout_constraintStart_toStartOf="@id/comicsRecyclerView"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="EVENTS"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eventsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@+id/events"
+            app:layout_constraintStart_toStartOf="@id/events"
+            />
+
+        <TextView
+            android:id="@+id/series"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/eventsRecyclerView"
+            app:layout_constraintStart_toStartOf="@id/comicsRecyclerView"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="SERIES"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/seriesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@+id/series"
+            app:layout_constraintStart_toStartOf="@id/series"
+            />
+
+        <TextView
+            android:id="@+id/stories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/seriesRecyclerView"
+            app:layout_constraintStart_toStartOf="@id/seriesRecyclerView"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="STORIES"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/storiesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@+id/stories"
+            app:layout_constraintStart_toStartOf="@id/stories"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
