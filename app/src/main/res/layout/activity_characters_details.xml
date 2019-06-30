@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.example.marvel.characterDetail.view.charactersDetailsActivity">
 
 
@@ -39,6 +40,8 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="@id/imageView"
             android:text="NAME"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:textStyle="bold"
             android:textColor="@color/red"
             />
@@ -50,7 +53,8 @@
             app:layout_constraintTop_toBottomOf="@+id/titleName"
             app:layout_constraintStart_toStartOf="@id/titleName"
             android:text="aaa"
-            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textColor="@android:color/white"
             />
 
         <TextView
@@ -73,7 +77,7 @@
             app:layout_constraintStart_toStartOf="@id/titleDesc"
             android:layout_marginTop="@dimen/_10sdp"
             android:text="aaa"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             />
 
         <TextView
@@ -84,6 +88,7 @@
             app:layout_constraintStart_toStartOf="@id/description"
             android:layout_marginTop="@dimen/_20sdp"
             android:text="COMICS"
+            android:layout_marginStart="@dimen/_10sdp"
             android:textStyle="bold"
             android:textColor="@color/red"
             />
@@ -92,7 +97,9 @@
             android:id="@+id/comicsRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            tools:listitem="@layout/details_item"
             android:layout_marginTop="@dimen/_8sdp"
+            android:layout_margin="@dimen/_3sdp"
             app:layout_constraintTop_toBottomOf="@+id/comics"
             app:layout_constraintStart_toStartOf="@id/comics"
             />
@@ -106,6 +113,7 @@
             app:layout_constraintStart_toStartOf="@id/comicsRecyclerView"
             android:layout_marginTop="@dimen/_20sdp"
             android:text="EVENTS"
+            android:layout_marginStart="@dimen/_10sdp"
             android:textStyle="bold"
             android:textColor="@color/red"
             />
@@ -114,6 +122,7 @@
             android:id="@+id/eventsRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
             android:layout_marginTop="@dimen/_8sdp"
             app:layout_constraintTop_toBottomOf="@+id/events"
             app:layout_constraintStart_toStartOf="@id/events"
@@ -123,6 +132,7 @@
             android:id="@+id/series"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
             app:layout_constraintTop_toBottomOf="@+id/eventsRecyclerView"
             app:layout_constraintStart_toStartOf="@id/comicsRecyclerView"
             android:layout_marginTop="@dimen/_20sdp"
@@ -135,6 +145,7 @@
             android:id="@+id/seriesRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
             android:layout_marginTop="@dimen/_8sdp"
             app:layout_constraintTop_toBottomOf="@+id/series"
             app:layout_constraintStart_toStartOf="@id/series"
@@ -144,6 +155,7 @@
             android:id="@+id/stories"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
             app:layout_constraintTop_toBottomOf="@+id/seriesRecyclerView"
             app:layout_constraintStart_toStartOf="@id/seriesRecyclerView"
             android:layout_marginTop="@dimen/_20sdp"
@@ -157,6 +169,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_8sdp"
+            android:layout_margin="@dimen/_3sdp"
             app:layout_constraintTop_toBottomOf="@+id/stories"
             app:layout_constraintStart_toStartOf="@id/stories"
             />
